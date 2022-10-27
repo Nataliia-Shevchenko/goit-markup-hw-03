@@ -62,7 +62,7 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 1230px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -73,7 +73,18 @@ img {
 .header {
   border-bottom: 1px solid #ececec;
 }
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+}
 .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -84,8 +95,18 @@ img {
 .logo-header {
   color: var(--logo-color);
 }
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
 
+.site-nav .item:not(last-child) {
+  margin-right: 50px;
+}
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -102,6 +123,13 @@ img {
   color: var(--accent-color);
 }
 
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+.contacts .item + .item {
+  margin-left: 50px;
+}
 .contacts .link {
   font-weight: 500;
   font-size: 14px;
@@ -118,9 +146,12 @@ img {
 /*-----------------hero--------------*/
 
 .hero {
+  background-color: var(--hero-bgc);
+}
+
+.hero-section {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--hero-bgc);
 }
 
 .hero-title {
@@ -131,17 +162,17 @@ img {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--primary-bgc);
 }
 .hero-btn {
   padding: 10px 32px;
-  min-width: 216px;
-  min-height: 50px;
   margin-left: auto;
   margin-right: auto;
+  min-width: 216px;
+  min-height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -173,12 +204,22 @@ img {
 }
 
 /*---------------Особливості---------------*/
-.features{
+.features {
   padding-bottom: 0;
 }
+
 .features-list {
+  display: flex;
+}
+
+.features-item {
   width: 270px;
 }
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -193,11 +234,24 @@ img {
   color: var(--secondary-text-color);
 }
 
+/*--------------Чим ми займаємось------------------*/
+
+.work-list {
+  display: flex;
+}
+
+.work-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /*--------------------Наша команда-----------------*/
 .team {
   background-color: var(--secondary-bgc);
 }
 
+.team-list {
+  display: flex;
+}
 .team-card {
   width: 270px;
   height: 368px;
@@ -205,6 +259,10 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-card:not(:last-child) {
+  margin-right: 30px;
 }
 .team-img {
   margin-bottom: 30px;
@@ -229,12 +287,15 @@ img {
 /*---------------------Підвал----------------*/
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--footer-bgc);
 }
 .logo-footer {
   color: var(--primary-bgc);
 }
 .footer-address {
+  margin-top: 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -254,9 +315,14 @@ img {
 /*---------------Сторінка Портфоліо-----------------*/
 
 /*-------------------Фільтр---------------------*/
-.filter-list{
+.filter-list {
+  display: flex;
   margin-top: 153px;
   margin-bottom: 33.88px;
+  justify-content: center;
+}
+.filter-item:not(:last-child) {
+  margin-right: 8px;
 }
 .filter-btn {
   min-height: 37.86px;
@@ -275,29 +341,43 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.all{
+.all {
   min-width: 73px;
 }
-.sites{
+.sites {
   min-width: 125px;
 }
-.apps{
+.apps {
   min-width: 112px;
 }
-.design{
+.design {
   min-width: 103px;
 }
-.marketing{
+.marketing {
   min-width: 130px;
 }
 /*----------------Галерея проєктів-------------------*/
-.project-item{
-  width: 370px;
-  height: 402.51px;
-  border: 1px solid #EEEEEE;
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
-.project-img{
-  margin: 0 0 19.93px;
+.project-item {
+  width: 370px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.project-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.project-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 28.89px;
+}
+
+.project-img {
+  margin-bottom: 19.93px;
 }
 .project-title {
   margin-right: 24px;
@@ -312,9 +392,9 @@ img {
 .project-desc {
   margin-right: 24px;
   margin-left: 24px;
+  margin-bottom: 19.93px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   color: var(--secondary-text-color);
 }
-
