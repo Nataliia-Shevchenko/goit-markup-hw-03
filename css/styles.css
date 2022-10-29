@@ -62,7 +62,7 @@ img {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -81,10 +81,9 @@ img {
 
 .nav {
   display: flex;
+  align-items: center;
 }
 .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -290,7 +289,6 @@ img {
 .footer-address {
   margin-top: 20px;
   font-style: normal;
-
   font-size: 14px;
   line-height: 1.71;
 }
@@ -317,7 +315,7 @@ img {
   display: flex;
   padding-bottom: 16px;
   margin-bottom: 34px;
-  justify-content: center;
+  margin-left: 297px;
 }
 .filter-item:not(:last-child) {
   margin-right: 8px;
