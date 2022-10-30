@@ -146,6 +146,8 @@ img {
 
 .hero {
   background-color: var(--hero-bgc);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -292,15 +294,14 @@ img {
   font-size: 14px;
   line-height: 1.71;
 }
-.footer-post {
+.footer-item:not(:last-child) {
   margin-bottom: 9px;
+}
+.footer-post {
   color: var(--primary-bgc);
 }
 .footer-contact {
   color: var(--footer-contact-color);
-}
-.footer-contact:not(:last-child) {
-  margin-bottom: 9px;
 }
 
 .footer-contact:hover,
@@ -315,7 +316,7 @@ img {
   display: flex;
   padding-bottom: 16px;
   margin-bottom: 34px;
-  margin-left: 297px;
+  justify-content: center;
 }
 .filter-item:not(:last-child) {
   margin-right: 8px;
